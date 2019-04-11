@@ -1,0 +1,347 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "266 Madison",
+        "id": "NA",
+        "house_num.x": "266",
+        "strt_name": "Madison",
+        "biz_name": "Hunter's Pharmacy",
+        "house_num.y": "266",
+        "street": "Madison",
+        "owner": "Hunter, Kenneth G.",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7613202895204,42.6486473960349]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "264 Madison",
+        "id": "NA",
+        "house_num.x": "264",
+        "strt_name": "Madison",
+        "biz_name": "Pat's Tavern",
+        "house_num.y": "264",
+        "street": "Madison",
+        "owner": "Viviano, Joseph J.",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7612616863681,42.6486144221922]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "254 Madison",
+        "id": "NA",
+        "house_num.x": "254",
+        "strt_name": "Madison",
+        "biz_name": "Isaac Israel, real estate",
+        "house_num.y": "254",
+        "street": "Madison",
+        "owner": "Israel, Isaac",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7610075683278,42.6484086168662]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "252 Madison",
+        "id": "NA",
+        "house_num.x": "252",
+        "strt_name": "Madison",
+        "biz_name": "Munafo & Sons, grocers",
+        "house_num.y": "252",
+        "street": "Madison",
+        "owner": "Munafo, Carmelo G.",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7609058954458,42.6483917322599]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "248 Madison",
+        "id": "NA",
+        "house_num.x": "248",
+        "strt_name": "Madison",
+        "biz_name": "Robert J. Childs, building contractor",
+        "house_num.y": "248",
+        "street": "Madison",
+        "owner": "Childs, Robert J.",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7607705791111,42.648311414139]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "159 Hudson",
+        "id": "6",
+        "house_num.x": "159",
+        "strt_name": "Hudson",
+        "biz_name": "Dinty's Tavern",
+        "house_num.y": "159",
+        "street": "Hudson",
+        "owner": "Levine, Morris and Rose",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7591009911012,42.6499054767564]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "165 Hudson",
+        "id": "6",
+        "house_num.x": "165",
+        "strt_name": "Hudson",
+        "biz_name": "Dan's Cleaners and Dyers",
+        "house_num.y": "165",
+        "street": "Hudson",
+        "owner": "Perretta, Joseph C.",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7592916011531,42.6500441392489]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "37 High",
+        "id": "6",
+        "house_num.x": "37",
+        "strt_name": "High",
+        "biz_name": "Walk In Variety Store",
+        "house_num.y": "37",
+        "street": "High",
+        "owner": "Betor, Joseph",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.75896525446,42.6501080417741]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "163 Hudson",
+        "id": "6",
+        "house_num.x": "163",
+        "strt_name": "Hudson",
+        "biz_name": "Joe's Book Store",
+        "house_num.y": "163",
+        "street": "Hudson",
+        "owner": "Desantis, Joseph M.",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.759219650998,42.6500042329201]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "157 Hudson",
+        "id": "9",
+        "house_num.x": "157",
+        "strt_name": "Hudson",
+        "biz_name": "Lozoff's Pharmacy",
+        "house_num.y": "157",
+        "street": "Hudson",
+        "owner": "Lozoff, Irving S.",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7589044584187,42.6497395523987]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "26 Jay",
+        "id": "9",
+        "house_num.x": "26",
+        "strt_name": "Jay",
+        "biz_name": "Charles Nelson Co, painters",
+        "house_num.y": "26",
+        "street": "Jay",
+        "owner": "Nelson, Charles",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.758467830624,42.6498944438166]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "2 Jay",
+        "id": "9",
+        "house_num.x": "2",
+        "strt_name": "Jay",
+        "biz_name": "Birch's Submarine Sandwich",
+        "house_num.y": "2",
+        "street": "Jay",
+        "owner": "Bernino, Eugene",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7577138574439,42.6494519018236]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "147 Hudson",
+        "id": "23",
+        "house_num.x": "147",
+        "strt_name": "Hudson",
+        "biz_name": "Brownie's Bicycles & Motorcycles",
+        "house_num.y": "147",
+        "street": "Hudson",
+        "owner": "Betar, Abraham",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7584886000571,42.6495749395305]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "143 Hudson",
+        "id": "23",
+        "house_num.x": "143",
+        "strt_name": "Hudson",
+        "biz_name": "Venice Italian Restaurant",
+        "house_num.y": "143",
+        "street": "Hudson",
+        "owner": "Cordi, Joseph C.",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7583939775816,42.6494846907888]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "141 Hudson",
+        "id": "23",
+        "house_num.x": "141",
+        "strt_name": "Hudson",
+        "biz_name": "Junie's Restaurant",
+        "house_num.y": "141",
+        "street": "Hudson",
+        "owner": "Betor, Michael J.",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.758328150661,42.6494579869883]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "76 Eagle",
+        "id": "4535",
+        "house_num.x": "76",
+        "strt_name": "Eagle",
+        "biz_name": "Fitzgerald's Grill",
+        "house_num.y": "76",
+        "street": "Eagle",
+        "owner": "Weisenberger, Catherine",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7579039710013,42.6491366219647]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "74 Eagle",
+        "id": "4535",
+        "house_num.x": "74",
+        "strt_name": "Eagle",
+        "biz_name": "Cindy's Beauty Shop",
+        "house_num.y": "74",
+        "street": "Eagle",
+        "owner": "Gold, Caroline",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7578442804766,42.6491848404299]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "72 Eagle",
+        "id": "4535",
+        "house_num.x": "72",
+        "strt_name": "Eagle",
+        "biz_name": "Mansion Wine & Liquor",
+        "house_num.y": "72",
+        "street": "Eagle",
+        "owner": "Cody, James W.",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7577605942095,42.6492239894219]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "70 Eagle",
+        "id": "4535",
+        "house_num.x": "70",
+        "strt_name": "Eagle",
+        "biz_name": "Eagle Barbershop",
+        "house_num.y": "70",
+        "street": "Eagle",
+        "owner": "Bellavance, Lucien J.",
+        "biz": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.757708101264,42.6492610966872]
+      }
+    }
+  ]
+}

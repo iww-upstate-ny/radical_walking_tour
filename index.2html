@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://fiddle.jshell.net/cerees/3ukj91pr/208/show/light/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Remapping Albany's Lost 98 Acres</title>
+<link rel="shortcut icon" href="remapping_icon.ico">
+
+  <script type="text/javascript" src="dummy.js"></script>
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="result-light.css">
+
+
+      <script type="text/javascript" src="mapbox.js"></script>
+
+
+
+      <link rel="stylesheet" type="text/css" href="mapbox.css">
+
+
+  <style type="text/css">
+    body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%; }
+p{
+font-family: Courier, "Courier New", monospace;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+letter-spacing: normal;
+line-height: normal;
+text-transform: none;
+text-decoration: none;
+text-align: left;
+}
+h1{
+font-family: Courier, "Courier New", monospace;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+letter-spacing: normal;
+line-height: normal;
+text-transform: none;
+text-decoration: none;
+text-align: left;
+}
+h2{
+font-family: Courier, "Courier New", monospace;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+letter-spacing: normal;
+line-height: normal;
+text-transform: none;
+text-decoration: none;
+text-align: left;
+}
+h3{
+font-family: Courier, "Courier New", monospace;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+letter-spacing: normal;
+line-height: normal;
+text-transform: none;
+text-decoration: none;
+text-align: left;
+}
+article {
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0px;
+  left:0;
+  overflow:auto;
+  }
+.quiet {
+  color:rgba(0,0,0,0.5);
+  }
+.scroll {
+  display:block;
+  text-align:center;
+  }
+.sections {
+  background:rgba(255,255,255,0.5);
+  width:500px;
+  }
+section {
+  padding:40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  margin-left:40px;
+  position:relative;
+  transition:background 500ms, color 500ms;
+  -moz-transition:background 500ms, color 500ms;
+  -webkit-transition:background 500ms, color 500ms;
+  }
+section,
+section a {
+  color:#888;
+  color:rgba(128,128,128,0);
+  text-decoration:none;
+  text-shadow:rgba(64,64,64,1) 0px 0px 4px;
+  }
+section.active {
+  background:#222;
+  color:#eee;
+  }
+section.active a { color:#eee; }
+section.active small { color:#aaa; }
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+
+
+  </style>
+
+<style type="text/css"></style><style type="text/css"></style><link rel="stylesheet" type="text/css" href="chrome-extension://pkehgijcmpdhfbdbbnkijodmdjhbjlgp/skin/socialwidgets.css"></head>
+<body>
+  <div id="map" class="leaflet-container leaflet-retina leaflet-fade-anim" tabindex="0"><div class="leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-tile-pane"><div class="leaflet-layer"><div class="leaflet-tile-container"></div><div class="leaflet-tile-container leaflet-zoom-animated"><img class="leaflet-tile leaflet-tile-loaded" src="6041@2x.png" style="height: 256px; width: 256px; left: 435px; top: 127px;"><img class="leaflet-tile leaflet-tile-loaded" src="6041@2x(1).png" style="height: 256px; width: 256px; left: 691px; top: 127px;"><img class="leaflet-tile leaflet-tile-loaded" src="6042@2x.png" style="height: 256px; width: 256px; left: 435px; top: 383px;"><img class="leaflet-tile leaflet-tile-loaded" src="6042@2x(1).png" style="height: 256px; width: 256px; left: 691px; top: 383px;"><img class="leaflet-tile leaflet-tile-loaded" src="6041@2x(2).png" style="height: 256px; width: 256px; left: 947px; top: 127px;"><img class="leaflet-tile leaflet-tile-loaded" src="6043@2x.png" style="height: 256px; width: 256px; left: 691px; top: 639px;"><img class="leaflet-tile leaflet-tile-loaded" src="6040@2x.png" style="height: 256px; width: 256px; left: 691px; top: -129px;"><img class="leaflet-tile leaflet-tile-loaded" src="6043@2x(1).png" style="height: 256px; width: 256px; left: 435px; top: 639px;"><img class="leaflet-tile leaflet-tile-loaded" src="6040@2x(1).png" style="height: 256px; width: 256px; left: 435px; top: -129px;"><img class="leaflet-tile leaflet-tile-loaded" src="6042@2x(2).png" style="height: 256px; width: 256px; left: 179px; top: 383px;"><img class="leaflet-tile leaflet-tile-loaded" src="6041@2x(3).png" style="height: 256px; width: 256px; left: 179px; top: 127px;"><img class="leaflet-tile leaflet-tile-loaded" src="6042@2x(3).png" style="height: 256px; width: 256px; left: 947px; top: 383px;"><img class="leaflet-tile leaflet-tile-loaded" src="6040@2x(2).png" style="height: 256px; width: 256px; left: 179px; top: -129px;"><img class="leaflet-tile leaflet-tile-loaded" src="6040@2x(3).png" style="height: 256px; width: 256px; left: 947px; top: -129px;"><img class="leaflet-tile leaflet-tile-loaded" src="6043@2x(2).png" style="height: 256px; width: 256px; left: 947px; top: 639px;"><img class="leaflet-tile leaflet-tile-loaded" src="6043@2x(3).png" style="height: 256px; width: 256px; left: 179px; top: 639px;"><img class="leaflet-tile leaflet-tile-loaded" src="6042@2x(4).png" style="height: 256px; width: 256px; left: 1203px; top: 383px;"><img class="leaflet-tile leaflet-tile-loaded" src="6041@2x(4).png" style="height: 256px; width: 256px; left: 1203px; top: 127px;"><img class="leaflet-tile leaflet-tile-loaded" src="6041@2x(5).png" style="height: 256px; width: 256px; left: -77px; top: 127px;"><img class="leaflet-tile leaflet-tile-loaded" src="6042@2x(5).png" style="height: 256px; width: 256px; left: -77px; top: 383px;"><img class="leaflet-tile leaflet-tile-loaded" src="6040@2x(4).png" style="height: 256px; width: 256px; left: 1203px; top: -129px;"><img class="leaflet-tile leaflet-tile-loaded" src="6043@2x(4).png" style="height: 256px; width: 256px; left: -77px; top: 639px;"><img class="leaflet-tile leaflet-tile-loaded" src="6040@2x(5).png" style="height: 256px; width: 256px; left: -77px; top: -129px;"><img class="leaflet-tile leaflet-tile-loaded" src="6043@2x(5).png" style="height: 256px; width: 256px; left: 1203px; top: 639px;"></div></div></div><div class="leaflet-objects-pane"><div class="leaflet-shadow-pane"></div><div class="leaflet-overlay-pane"><svg class="leaflet-zoom-animated" width="1997" height="1113" viewBox="-280 -156 1997 1113" style="transform: translate3d(-280px, -156px, 0px);"><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M694 410L700 402L728 423L722 431z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M726 390L733 382L748 394L743 402z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M733 382L726 390L717 383L723 374z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="white" stroke-opacity="1" stroke-width="2" stroke-dasharray="3" fill="#800026" fill-opacity="0.7" class="leaflet-clickable" d="M694 410L700 402L728 423L722 431z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="white" stroke-opacity="1" stroke-width="2" stroke-dasharray="3" fill="#FC4E2A" fill-opacity="0.7" class="leaflet-clickable" d="M726 390L733 382L748 394L743 402z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="white" stroke-opacity="1" stroke-width="2" stroke-dasharray="3" fill="#FFEDA0" fill-opacity="0.7" class="leaflet-clickable" d="M733 382L726 390L717 383L723 374z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M702 406L701 406z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0000ff" stroke-opacity="0.5" stroke-width="5" fill="#0000ff" fill-opacity="0.2" class="leaflet-clickable" d="M701 407L702 407z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M706 409L704 412L705 409z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M707 410L706 411L706 409z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M709 411L708 413L708 411z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M710 412L709 414L709 412z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0000ff" stroke-opacity="0.5" stroke-width="5" fill="#0000ff" fill-opacity="0.2" class="leaflet-clickable" d="M726 387L728 385L727 388z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M726 383L724 386L726 383z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M726 383L724 386L726 383z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M728 382L730 384L728 383z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M726 385L725 387L724 386L726 383L726 385z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M729 388L729 389z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M735 386L734 388L735 386z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M737 388L736 390L737 387z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M744 393L743 394L744 393z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M735 392L734 393L735 390L735 392z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M736 392L735 394L736 392z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M737 393L736 395L735 394L737 392z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M740 397L743 399L742 400L740 398z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M742 397L743 398L740 397L741 396L742 398z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M742 397L743 398L740 397L741 396L742 398z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#ff0000" stroke-opacity="0.5" stroke-width="5" fill="#ff0000" fill-opacity="0.2" class="leaflet-clickable" d="M743 396L744 397L742 397z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#0033ff" stroke-opacity="0.5" stroke-width="5" fill="#0033ff" fill-opacity="0.2" class="leaflet-clickable" d="M743 396L744 397L743 396z"></path></g></svg></div><div class="leaflet-marker-pane"><img src="pin-m+a8f@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(719px, 401px, 0px); z-index: 401;"><img src="pin-m+404040@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(717px, 420px, 0px); z-index: 420;"><img src="pin-m+404040@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(717px, 420px, 0px); z-index: 420;"><img src="pin-m+404040@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(675px, 409px, 0px); z-index: 409;"><img src="pin-m+404040@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(717px, 420px, 0px); z-index: 420;"><img src="pin-m+404040@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(740px, 396px, 0px); z-index: 396;"><img src="pin-m+404040@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(740px, 396px, 0px); z-index: 396;"><img src="pin-m+404040@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(740px, 396px, 0px); z-index: 396;"><img src="pin-m+404040@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(740px, 396px, 0px); z-index: 396;"><img src="pin-m+404040@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(740px, 396px, 0px); z-index: 396;"><img src="pin-m+404040@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(740px, 396px, 0px); z-index: 396;"><img src="pin-m+404040@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(740px, 396px, 0px); z-index: 396;"><img src="pin-m+404040@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(740px, 396px, 0px); z-index: 396;"><img src="pin-m+404040@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(740px, 396px, 0px); z-index: 396;"><img src="pin-m+404040@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(740px, 396px, 0px); z-index: 396;"><img src="pin-m+404040@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(740px, 396px, 0px); z-index: 396;"><img src="pin-m+404040@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; transform: translate3d(740px, 396px, 0px); z-index: 396;"></div><div class="leaflet-popup-pane"></div></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="http://fiddle.jshell.net/cerees/3ukj91pr/208/show/light/#" title="Zoom in">+</a><a class="leaflet-control-zoom-out" href="http://fiddle.jshell.net/cerees/3ukj91pr/208/show/light/#" title="Zoom out">-</a></div></div><div class="leaflet-top leaflet-right"><div class="leaflet-control-grid map-tooltip leaflet-control" style="display: none;"><a class="close" href="http://fiddle.jshell.net/cerees/3ukj91pr/208/show/light/#" title="close">close</a><div class="map-tooltip-content"></div></div></div><div class="leaflet-bottom leaflet-left"><div class="mapbox-logo leaflet-control mapbox-logo-true"></div></div><div class="leaflet-bottom leaflet-right"><div class="map-legends wax-legends leaflet-control" style="display: none;"></div><div class="leaflet-control-attribution leaflet-control"><a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox © OpenStreetMap</a> <a class="mapbox-improve-map" href="https://www.mapbox.com/map-feedback/#mapbox.wheatpaste/-73.760/42.649/14" target="_blank">Improve this map</a></div></div></div></div>
+<article id="narrative">
+  <div class="sections prose">
+    <section id="cover" class="active">
+        <img src="blurred_98acres_sadman.png" alt="paper_headline" style=" max-width: 100%;
+    max-height: 100%;">
+            <hr>
+            <h3><span style="font-size:30px">O</span>n March 27, 1962, the State of New York appropriated 98 acres in Albany’s core, between the Capitol and Governor’s Mansion. This area now lies beneath the Nelson A. Rockefeller Empire State Plaza and South Mall Arterial. But in March 1962, it was home to roughly seven thousand people and more than four hundred businesses.
+<br>
+<br>
+This story map is a first step toward our goal of digitally reconstructing and repopulating the 98 acres on the eve of demolition. The map demonstrates what we can do now and how we will proceed once the 98 acres have been restored to the map of Albany.</h3>
+        </section>
+    <small class="scroll quiet">Scroll ▾</small>
+    <section id="remap" class="">
+        <img src="qgis_mapping_example.png" alt="paper_headline" style=" max-width: 100%;
+    max-height: 100%;">
+      <h2>Remapping</h2>
+        <p>We decided to remap three sample blocks (out of 40 taken) as a test of concept. Because the area was demolished more than 50 years ago, we cannot rely on Google maps. Instead, project team member Christopher Rees, a Ph.D. candidate in Sociology at U Albany, is using an open-source mapping software called QGIS to do the job.
+<br>
+<br>
+To restore the sample blocks, Mr. Rees anchored segments from an updated Sanborn fire insurance map to known geographic coordinates on the current map of Albany. He then assigned latitude and longitude coordinates to each demolished structure and extracted visual data (such as construction type) from the map using a modified software script from the New York Public Library.</p>
+        </section>
+    <section id="repop" class="">
+      <h2>Repopulating</h2>
+        <p>The 98 Acres was once home to Albany’s elite, but as the city grew west, they moved with it. By 1962, most of the area’s stately homes had been divided into multiple units. Some housed two or three generations of a single family. Other homeowners rented out rooms and apartments to supplement household income. More than ten percent of the structures within the 98 acres were single room occupancy (SROs)—rooming houses and cheap hotels.
+<br>
+<br>
+With help from researcher Tricia Barbagello, a Ph.D candidate in History at U Albany, we identified the owner, residents, construction, and condition of each property in the sample blocks. To this data, we added a contemporary photograph of the demolished structure. We plan to do the same for the whole 98 acres. In addition, the completed map will highlight representative stories, providing a fuller insight into the lives of former residents and business owners. We are publishing longer-form stories on our blog and, eventually, in our book.</p>
+        </section>
+    <section id="158_elm" class="">
+      <img src="1 158 Elm.jpg" alt="paper_headline" style=" max-width: 100%;
+    max-height: 100%;">
+      <h2>The Nicholas Family's House</h2>
+        <p>In 1951, with a fifth child on the way, Edward and Dorothy Nicholas purchased the four-story townhouse at 158 Elm Street as a fixer-upper. (At the time, the basement was visible through the kitchen floor). A friend of the family loaned them money for the down payment. No banks were involved; the former owner held the deed until the loan was paid off.
+<br>
+<br>
+Despite the initial disrepair, 158 Elm Street retained vestiges of former grandeur—marble mantles, pocket doors, and white porcelain servant call boxes in the kitchen and third floor hall. The family lived on the first two floors—the children shared beds and a bath on the second floor—and rented out the rest, until building codes required installation of a fire escape. For several years, Francis J. McCarty, a widowed former house painter, and his unmarried son, Francis T., lived in a third floor apartment.</p>
+        </section>
+    <section id="29_Grand" class="">
+        <img src="2 29 Grand.jpg" alt="paper_headline" style=" max-width: 100%;
+    max-height: 100%;">
+      <h2>James Strawn's Apartment</h2>
+        <p>James C. Strawn was a janitor, musician (leader of Jimmy Strawn and His Sultans), and off-the-books barber, who once lived and worked at 29 Grand Street. To make extra money, he collected clearing house slips for a local bookie. We know that he arrived in Albany with his wife Eleanor in the mid-1940s, probably from Newark, NJ, but we do not yet know where he was born, who his parents were, or what he did before moving to Albany.
+<br>
+<br>
+On March 27, 1962, when he and his neighbors were interviewed by the Knickerbocker News, Mr. Strawn was 68-years-old and had rented the same apartment from an absentee landlord for fifteen years. Mr. Strawn told the reporters that he thought the South Mall would be good for Albany, commenting that the demolition of “these 50-and-60-year old buildings might make for some decent places in which to live.” George Kemp, who lived across the street at 40 Grand, added, “This would be a pretty good deal if they included housing projects, too.” Little of the hoped-for replacement housing was built.</p>
+        </section>
+    <section id="45_jefferson" class="">
+        <img src="3 45 Jefferson.jpg" alt="paper_headline" style=" max-width: 100%;
+    max-height: 100%;">
+      <h2>The Robinson Family's House</h2>
+        <p>In 1955, John G. and Vivian Robinson signed a lease-and-option (rent-to-own) agreement with Sidney Albert and Irving Kirsch, notorious Albany slum landlords later known for their philanthropy. During their tenure, in addition to monthly rent, the Robinsons were responsible for the cost of all taxes, assessments, water rents, insurance fees, and repairs. At the end of thirteen years, the Robinsons would have had the option to purchase 45 Jefferson for the price of $8,200 (at 6% interest) minus rental payments.
+<br>
+<br>
+The benefit of such an agreement to the Robinsons was the ability to purchase a home without a bank loan or down payment. In addition, they accrued extra income by renting out upstairs apartments. The drawback was that Albert &amp; Kirsch retained ownership of the property until the Robinsons exercised their option to buy. We do not yet know whether the Robinsons received any payment from the State of New York for the appropriation of 45 Jefferson.</p>
+        </section>
+<section id="rooming" class="">
+      <h2>Rooming Houses</h2>
+        <p>Roughly ten percent of structures appropriated by the state were SROs (mainly rooming houses). But rooming houses were not evenly distributed throughout the area. Most were clustered in the district bounded by Eagle and S. Swan to the east and west, Lancaster and Hamilton to the north and south. </p>
+    </section>
+<section id="48_lancaster" class="">
+    <img src="4 48 Jefferson.jpg" alt="paper_headline" style=" max-width: 100%;
+    max-height: 100%;">
+      <h2>Mae Carlson's Rooming Houses</h2>
+        <p>Like many others, Marion “Mae” Carlson got her start in the rooming house trade on Jay Street in the 1920s. But she quickly expanded her empire to S. Hawk, Chestnut, and Lancaster streets. By 1961, Mrs. Carlson owned about 20 rooming houses within the South Mall take area, including 48 Lancaster, where she lived in the basement/first floor flat with her husband, grandson, and adopted daughter.
+<br>
+<br>
+The day after news of the South Mall appropriation became public, Knickerbocker News reporter Ed Swietnicki asked Mrs. Carlson what she thought. “I think the plan is going to make the whole place around here beautiful,” she responded.  “What will I do when the building is torn down? I haven’t thought about it yet.” She moved a couple of blocks up Lancaster Street, living out her last twenty years in another rooming house, on the edge of the Empire State Plaza.</p>
+    </section><section id="36_jay" class="">
+            <img src="5 36 Jay.jpg" alt="paper_headline" style=" max-width: 100%;
+    max-height: 100%;">
+      <h2>An Unidentified Tenant of 36 Jay</h2>
+        <p>We may never be able to identify this man, who once lived in James Boyle’s rooming house at 36 Jay. But he represents an important demographic in the South Mall area.
+<br>
+<br>
+A March 1963 count of residents remaining in the 98 acres estimated that there were 1,025 single men. This group represented about one third of all households and at least 15% of the area’s population. The local Tuberculosis Association was particularly concerned about the fate of this group, fearing that the destruction of furnished single-room residences would lead to rising homelessness and deteriorating health. A related fear, according to the Council of Community Services, was that displacement of these men would serve to “push the slums into another section of the city.”</p>
+      </section><section id="14_jay" class="">
+            <img src="6 14 Jay.JPG" alt="paper_headline" style=" max-width: 100%;
+    max-height: 100%;">
+      <h2>The Radrizzi Family's Rooming Houses</h2>
+        <p>Victor and Adele Radrizzi’s children were born in Italy but grew up at 14 Jay Street in Albany’s rooming house district. They lived next door to rooming house moguls Lillian Pierce and, later, Mae Carlson.
+<br>
+<br>
+More than forty years later in 1962, Louis, Antoinette, Josephine, and Ada—now in their 50s and 60s—still lived on Jay Street. Both home and business, the family’s six properties (12, 14, 16, 18, 40, and 45 Jay) were among those appropriated by the State to make way for the Empire State Plaza.</p>
+      </section><section id="biz" class="">
+      <h2>Businesses</h2>
+        <p>Within the 98 acres, we found more than 400 businesses (not including apartment buildings and SROs). Most were small stores—groceries, grills, taverns, and tailors—that catered to a neighborhood crowd. However, like residents of the 98 acres, businesses varied according to the neighborhood in which they were located. </p>
+      </section><section id="162_hudson" class="">
+            <img src="7 162 Hudson.jpg" alt="paper_headline" style=" max-width: 100%;
+    max-height: 100%;">
+      <h2>Hudson Shoe Rebuilders</h2>
+        <p>Hudson Shoe Rebuilders was more than just a shoe repair store. Lazarus Kontis also sold dry goods, such as socks and nylons, and Greek imports—olives, oil, and feta cheese. Since the 1930s, the store had served as the neighborhood’s polling place, where constituents could find or leave messages (usually requests for favors) for Ward 14 Democratic committee man, Charley Diamond.
+<br>
+<br>
+In 1962, when the State appropriated 162 Hudson, Mr. Kontis and his wife, Sophie, had lived and worked there for 33 years. In it, the couple built the business and raised their three children. Every day for thirty-three years, Mr. Kontis walked downstairs from his home to his store. When the family moved from Hudson to Myrtle Avenue, he kept trying to do the same. </p>
+      </section><section id="266_madison" class="">
+            <img src="8 266 Madison.jpg" alt="paper_headline" style=" max-width: 100%;
+    max-height: 100%;">
+      <h2>Kenneth J. Hunter's Pharmacy</h2>
+        <p>Kenneth J. Hunter opened his pharmacy at the corner of Madison and South Hawk in 1929, shortly after graduating from Albany College of Pharmacy. Many of the prescriptions he filled were for patients of Dr. Julius Padula, whose 118 Elm Street home and office was demolished for the South Mall. The store’s customers also included neighborhood children, attracted by the soda fountain.
+<br>
+<br>
+In the spring or summer of 1962, Mr. Hunter spoke with a canvasser sent by Mayor Erastus Corning to interview residents and business owners in the 98 acres. Having built up his business for 33 years, “it would be too great a hardship to try and start over again. Why,” Mr. Hunter wondered, “don’t they just take the property that had deteriorated and leave the good paying businesses and properties alone?” Soon after, he suffered a heart attack, which his son and daughter attribute to the stress of losing the store.</p>
+      </section><section id="75_green" class="">
+            <img src="9 75 Green.jpg" alt="paper_headline" style=" max-width: 100%;
+    max-height: 100%;">
+      <h2>Lucius Major and Reba Johnson's Barber and Beauty Shop</h2>
+        <p>Lucius Major and Reba Johnson were Southern migrants, he from South Carolina, she from Georgia. In 1962, they owned a barber and beauty shop in a storefront beneath the Palombi Hotel at 75 Green Street. They had been in business at that location for over a decade. (He appears to have taught her the trade.) After the shop was demolished for the South Mall Arterial, they moved the business a block away to their home address. </p>
+    </section><section id="future_research" class="">
+      <h2>Future Research</h2>
+        <p>Restoring the 98 acres to the map of Albany provides a unique opportunity to study—with precision and specificity—the effects of federal policies, state actions, local politics, and individual choices on one city’s urban core, 1940-1960. </p>
+      </section><section id="economics" class="">
+      <h2>Economic Research</h2>
+            <img src="10 redlining map.jpg" alt="paper_headline" style=" max-width: 100%;
+    max-height: 100%;">
+        <p>In the 1930s, the 98 acres was among the areas redlined by local bankers for the Federal Housing Authority. The FHA used these maps to identify which loans were too risky to guarantee, making it much harder for purchasers and owners in those areas to obtain bank mortgages and home improvement loans.
+<br>
+<br>
+We propose to analyze how federal housing policy and national capital flows affected the 98 acres. Using title searches and other documents generated by the State as part of the South Mall property acquisition process, we will measure and map the extent to which property owners were able to acquire traditional bank loans or were forced to rely alternative financing methods (typically a private loan from the prior owner). This focus draws on and supports David Hochfelder’s research on the history of thrift in America.
+</p>
+      </section><section id="demography" class="">
+            <img src="11 population change.jpg" alt="paper_headline" style=" max-width: 100%;
+    max-height: 100%;">
+      <h2>Population Research</h2>
+        <p>Over the course of two decades between 1940 and 1960, the population of the 98 acres became dramatically smaller, poorer, older, and blacker. Detached single-family homes secured with FHA or GI Bill loans lured upwardly-mobile white families to the city’s edge and suburbs. Residential segregation prevented black families from pursuing the same goal. Southern migrants further bolstered the area’s black population.
+<br>
+<br>
+Using Census data, we will map city-wide and area-specific population and housing trends between 1940 and 1960. To complement the Census data, we plan to conduct oral histories to explore how neighborhood boundaries and the effects of urban renewal differed by such factors as income, age, race, and ethnicity.
+<br>
+<br>
+Finally, we will (to the best of our ability) map where former residents were living in 1965. This may be difficult, because many did not have phone numbers and were not listed in phone books. Likewise, the city directory does not include the area’s most transient residents.
+<br>
+<br>
+A related Sociology project, led by Chris Rees, will examine the changing demographics of the areas around the Empire State Plaza, 1940-1990. Together, these projects will contribute to fields of urban history and sociology and to the urban planning literature on displacement due to urban renewal and, later, gentrification. </p>
+    </section>
+  </div>
+</article>
+
+<script type="text/javascript">//<![CDATA[
+
+L.mapbox.accessToken = 'pk.eyJ1IjoiY3I5OTU4NjciLCJhIjoiX2tKc1h2byJ9.J1HpzaPiwCEhN-aJgU_Frg';
+// In this case, we just hardcode data into the file. This could be dynamic.
+// The important part about this data is that the 'id' property matches
+// the HTML above - that's how we figure out how to link up the
+// map and the data.
+
+var places = { type: 'FeatureCollection', features: [
+{ geometry: { type: "Point", coordinates: [-73.7598, 42.6490] },
+  properties: { id: "cover", zoom: 14 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-73.759952, 42.647769] },
+  properties: { id: "remap", zoom: 17 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-73.759952, 42.647769] },
+  properties: { id: "repop", zoom: 17 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-73.76357,42.64849] },
+  properties: { id: "158_elm", zoom: 22 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-73.759952, 42.647769] },
+  properties: { id: "29_grand", zoom: 22 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-73.75799,42.64931] },
+  properties: { id: "45_jefferson", zoom: 22 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-73.75799,42.64931] },
+  properties: { id: "rooming", zoom: 18 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-73.75799,42.64931] },
+  properties: { id: "48_lancaster", zoom: 22 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-73.75799,42.64931] },
+  properties: { id: "36_jay", zoom: 22 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-73.75799,42.64931] },
+  properties: { id: "14_jay", zoom: 22 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-73.75799,42.64931] },
+  properties: { id: "biz", zoom: 18 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-73.75799,42.64931] },
+  properties: { id: "162_hudson", zoom: 22 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-73.75799,42.64931] },
+  properties: { id: "266_madison", zoom: 22 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-73.75799,42.64931] },
+  properties: { id: "75_green", zoom: 22 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-73.75799,42.64931] },
+  properties: { id: "future_research", zoom: 16 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-73.75799,42.64931] },
+  properties: { id: "economics", zoom: 16 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-73.75799,42.64931] },
+  properties: { id: "demography", zoom: 16 }, type: 'Feature' },
+]};
+
+var map = L.mapbox.map('map', 'mapbox.wheatpaste', {
+    zoomControl: true}).setView([-73.7598, 42.6490], 6);
+
+var placesLayer = L.mapbox.featureLayer(places)
+    .addTo(map);
+
+
+// Ahead of time, select the elements we'll need -
+// the narrative container and the individual sections
+var narrative = document.getElementById('narrative'),
+    sections = narrative.getElementsByTagName('section'),
+    currentId = '';
+
+setId('cover');
+
+function setId(newId) {
+    // If the ID hasn't actually changed, don't do anything
+    if (newId === currentId) return;
+    // Otherwise, iterate through layers, setting the current
+    // marker to a different color and zooming to it.
+    placesLayer.eachLayer(function(layer) {
+        if (layer.feature.properties.id === newId) {
+            map.setView(layer.getLatLng(), layer.feature.properties.zoom || 14);
+            layer.setIcon(L.mapbox.marker.icon({
+                'marker-color': '#a8f'
+            }));
+        } else {
+            layer.setIcon(L.mapbox.marker.icon({
+                'marker-color': '#404040'
+            }));
+        }
+    });
+    // highlight the current section
+    for (var i = 0; i < sections.length; i++) {
+        sections[i].className = sections[i].id === newId ? 'active' : '';
+    }
+    // And then set the new id as the current one,
+    // so that we know to do nothing at the beginning
+    // of this function if it hasn't changed between calls
+    currentId = newId;
+}
+
+// If you were to do this for real, you would want to use
+// something like underscore's _.debounce function to prevent this
+// call from firing constantly.
+narrative.onscroll = function(e) {
+    var narrativeHeight = narrative.offsetHeight;
+    var newId = currentId;
+    // Find the section that's currently scrolled-to.
+    // We iterate backwards here so that we find the topmost one.
+    for (var i = sections.length - 1; i >= 0; i--) {
+        var rect = sections[i].getBoundingClientRect();
+        if (rect.top >= 0 && rect.top <= narrativeHeight) {
+            newId = sections[i].id;
+        }
+    };
+    setId(newId);
+};
+
+var blocks ={
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "block_id": 10, "tract_id": 23, "geo_id": "23_10", "tract_id2": "23", "block_id2": "10", "boundaries": "Hawk\/Eagle\/jefferson\/Madison", "tot_pop": "250", "tract_pop": "1219", "tot_units": "86", "sound_unit": "67", "deterior_u": "3", "dilap_unit": "16", "owner_occ": "16", "renter_occ": "65", "nonwhite_o": "18", "nonwhite_p": "74.34", "prop_occ": "0.942", "pct_nonwhi": "0.222", "pct_sound_": "0.779", "pct_owner_": 0.198, "avg_hh_siz": "3.09", "propnwhite": 0.220000 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.761945700245718, 42.648389352405751 ], [ -73.761398771764206, 42.648941498511576 ], [ -73.75899657608069, 42.647616339623632 ], [ -73.759527418430395, 42.647068125757173 ], [ -73.761945700245718, 42.648389352405751 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 2, "block_id": 13, "tract_id": 13, "geo_id": "13_13", "tract_id2": "13", "block_id2": "13", "boundaries": "High\/Eagle\/Hudson\/Jay", "tot_pop": "213", "tract_pop": "2566", "tot_units": "101", "sound_unit": "73", "deterior_u": "16", "dilap_unit": "12", "owner_occ": "13", "renter_occ": "78", "nonwhite_o": "5", "nonwhite_p": "15.5", "prop_occ": "0.901", "pct_nonwhi": "0.054945", "pct_sound_": "0.723", "pct_owner_": 0.143, "avg_hh_siz": "2.34", "propnwhite": 0.050000 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.759166569785165, 42.649686656764267 ], [ -73.75864180542311, 42.650190975761582 ], [ -73.757280722021051, 42.649406874994355 ], [ -73.757784754151075, 42.648898115780668 ], [ -73.759166569785165, 42.649686656764267 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 2, "block_id": 8, "tract_id": 13, "geo_id": "13_08", "tract_id2": "13", "block_id2": "08", "boundaries": "Hawk\/High\/Hudson\/Jay", "tot_pop": "47", "tract_pop": "2566", "tot_units": "29", "sound_unit": "28", "deterior_u": "1", "dilap_unit": "0", "owner_occ": "1", "renter_occ": "28", "nonwhite_o": "0", "nonwhite_p": "0", "prop_occ": "1", "pct_nonwhi": "0", "pct_sound_": "0.966", "pct_owner_": 0.034483, "avg_hh_siz": "1.62", "propnwhite": 0.000000 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.75864180542311, 42.650190975761582 ], [ -73.759166569785165, 42.649686656764267 ], [ -73.759961743989237, 42.650140427465317 ], [ -73.759457711859227, 42.650661007841599 ], [ -73.75864180542311, 42.650190975761582 ] ] ] } }
+]
+}
+
+L.geoJson(blocks).addTo(map);
+
+function getColor(d) {
+    return d > .17 ? '#800026' :
+           d > .16  ? '#BD0026' :
+           d > .15  ? '#E31A1C' :
+           d > .14  ? '#FC4E2A' :
+           d > .13   ? '#FD8D3C' :
+           d > .12   ? '#FEB24C' :
+           d > .11   ? '#FED976' :
+                      '#FFEDA0';
+}
+
+function style(feature) {
+    return {
+        fillColor: getColor(feature.properties.pct_owner_),
+        weight: 2,
+        opacity: 1,
+        color: 'white',
+        dashArray: '3',
+        fillOpacity: 0.7
+    };
+}
+
+L.geoJson(blocks, {style: style}).addTo(map);
+
+var biz ={
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+
+"features": [
+{ "type": "Feature", "properties": { "id": null, "house_num": 266, "strt_name": "Madison", "full_add": "266 Madison", "biz": "Hunter's Pharmacy", "house_num2": "266", "street": "Madison", "biz_type": "phar", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.761271263057566, 42.648652260779187 ], [ -73.761307543601134, 42.648608421789042 ], [ -73.761370958187896, 42.648645942086212 ], [ -73.761331365224407, 42.648684718699947 ], [ -73.761271263057566, 42.648652260779187 ] ] ] } },
+{ "type": "Feature", "properties": { "id": null, "house_num": 264, "strt_name": "Madison", "full_add": "264 Madison", "biz": "Pat's Tavern", "house_num2": "264", "street": "Madison", "biz_type": "eat drink", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.761307543601134, 42.648608421789042 ], [ -73.761271263057566, 42.648652260779187 ], [ -73.761216360108833, 42.648622610674146 ], [ -73.761251875319047, 42.648575484722144 ], [ -73.761307543601134, 42.648608421789042 ] ] ] } },
+{ "type": "Feature", "properties": { "id": null, "house_num": 254, "strt_name": "Madison", "full_add": "254 Madison", "biz": "Isaac Israel, real estate", "house_num2": "254", "street": "Madison", "biz_type": null, "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.760907631374863, 42.64845588302834 ], [ -73.760976479445389, 42.648364413448945 ], [ -73.760989478240987, 42.648351414653348 ], [ -73.761012366072507, 42.648359997590177 ], [ -73.761055280756622, 42.648312791437654 ], [ -73.761111069845967, 42.648341401227057 ], [ -73.761053850267146, 42.648398620805871 ], [ -73.761074286337404, 42.648411345151501 ], [ -73.760989607988549, 42.64850015415152 ], [ -73.760907631374863, 42.64845588302834 ] ] ] } },
+{ "type": "Feature", "properties": { "id": null, "house_num": 252, "strt_name": "Madison", "full_add": "252 Madison", "biz": "Munafo & Sons, grocers", "house_num2": "252", "street": "Madison", "biz_type": "grocery", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.760834818699152, 42.648416560851068 ], [ -73.760909670024574, 42.64832585865674 ], [ -73.760973742856805, 42.648367150037522 ], [ -73.760976479445389, 42.648364413448945 ], [ -73.760907631374863, 42.64845588302834 ], [ -73.760834818699152, 42.648416560851068 ] ] ] } },
+{ "type": "Feature", "properties": { "id": null, "house_num": 248, "strt_name": "Madison", "full_add": "248 Madison", "biz": "Robert S Childs, building contractor", "house_num2": "248", "street": "Madison", "biz_type": null, "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.760696219038579, 42.648341710691128 ], [ -73.760772104713382, 42.64824369169451 ], [ -73.760787779225666, 42.648254141369364 ], [ -73.760842137825534, 42.648277029200891 ], [ -73.760852628081651, 42.648271784072833 ], [ -73.760766376287009, 42.648379598816135 ], [ -73.760696219038579, 42.648341710691128 ] ] ] } },
+{ "type": "Feature", "properties": { "id": null, "house_num": 244, "strt_name": "Madison", "full_add": "244 Madison", "biz": "Madison Hand Laundry", "house_num2": "244", "street": "Madison", "biz_type": "clean", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.760580463190522, 42.648279197235425 ], [ -73.760649939657583, 42.648187944562252 ], [ -73.760650452236504, 42.648188338853728 ], [ -73.760681923004853, 42.648158298574849 ], [ -73.760717685241616, 42.648176894937968 ], [ -73.760696227899558, 42.648206935216841 ], [ -73.7607158950578, 42.64821817359298 ], [ -73.760641718652181, 42.648312277988175 ], [ -73.760580463190522, 42.648279197235425 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 6, "house_num": 159, "strt_name": "Hudson", "full_add": "159 Hudson", "biz": "Dinty Moore's Tavern", "house_num2": "159", "street": "Hudson", "biz_type": "eat drink", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.759201362402308, 42.649864266622686 ], [ -73.759136657935485, 42.649942593082528 ], [ -73.759130267414221, 42.649938526387182 ], [ -73.759075572487276, 42.649990486567788 ], [ -73.759072648204054, 42.64999377638641 ], [ -73.758999314916693, 42.64994401451284 ], [ -73.759122063175184, 42.64981819754788 ], [ -73.759201362402308, 42.649864266622686 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 6, "house_num": 165, "strt_name": "Hudson", "full_add": "165 Hudson", "biz": "Dan's Cleaners and Dyers", "house_num2": "165", "street": "Hudson", "biz_type": "clean", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.759174939640829, 42.650108594062537 ], [ -73.759342813630042, 42.649946443050226 ], [ -73.759409211541694, 42.649985017075089 ], [ -73.759231453029102, 42.65014363236326 ], [ -73.759174939640829, 42.650108594062537 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 6, "house_num": 165, "strt_name": "Hudson", "full_add": "165 Hudson", "biz": "Dan's Tailor Shop", "house_num2": "165", "street": "Hudson", "biz_type": "tailor", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.759174939640829, 42.650108594062537 ], [ -73.759342813630042, 42.649946443050226 ], [ -73.759409211541694, 42.649985017075089 ], [ -73.759231453029102, 42.65014363236326 ], [ -73.759174939640829, 42.650108594062537 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 6, "house_num": 37, "strt_name": "High", "full_add": "37 High", "biz": "Walk In Variety Store", "house_num2": "37", "street": "High", "biz_type": "variety", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.759019886789218, 42.650177403481855 ], [ -73.758861863605986, 42.650084902106315 ], [ -73.758909567292505, 42.65003600582763 ], [ -73.759066298130094, 42.650132455573839 ], [ -73.759058959542173, 42.650149578945658 ], [ -73.759019886789218, 42.650177403481855 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 6, "house_num": 163, "strt_name": "Hudson", "full_add": "163 Hudson", "biz": "Joe's Book Store", "house_num2": "163", "street": "Hudson", "biz_type": null, "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.759186251675686, 42.649974152735382 ], [ -73.759263433283991, 42.649900326849185 ], [ -73.759342813630042, 42.649946443050226 ], [ -73.759174939640829, 42.650108594062537 ], [ -73.759094715711711, 42.650058855226483 ], [ -73.759190431833872, 42.649976812836044 ], [ -73.759186251675686, 42.649974152735382 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 9, "house_num": 157, "strt_name": "Hudson", "full_add": "157 Hudson", "biz": "Lozoff's Pharmacy", "house_num2": "157", "street": "Hudson", "biz_type": "pharm", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.758910161174725, 42.649794226314462 ], [ -73.758836424540803, 42.649749406007565 ], [ -73.758900548721016, 42.649684194976835 ], [ -73.758971652126064, 42.64973068566475 ], [ -73.758910161174725, 42.649794226314462 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 9, "house_num": 26, "strt_name": "Jay", "full_add": "26 Jay", "biz": "Charles Nelson Co, painters", "house_num2": "26", "street": "Jay", "biz_type": null, "notes": "(wife ran rooming house at 28)" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.758396120980464, 42.649923839154106 ], [ -73.758463597026804, 42.649849875026398 ], [ -73.758498541007896, 42.649823667040572 ], [ -73.758531357964074, 42.649840075518661 ], [ -73.758501275754242, 42.649872892474832 ], [ -73.758514949485985, 42.649892035699267 ], [ -73.758547510059671, 42.649861645830491 ], [ -73.75845927953506, 42.649961105694608 ], [ -73.758396120980464, 42.649923839154106 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 9, "house_num": 20, "strt_name": "Jay", "full_add": "20 Jay", "biz": "Joseph Mesiit, carpenter", "house_num2": "20", "street": "Jay", "biz_type": null, "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.758219623680162, 42.649819697382135 ], [ -73.75831279027777, 42.649709760796966 ], [ -73.758345395212416, 42.649727950918404 ], [ -73.758315313002598, 42.64976897211362 ], [ -73.758337190973378, 42.649785380591702 ], [ -73.758344809195364, 42.649778778132656 ], [ -73.758282086974702, 42.649856553686256 ], [ -73.758219623680162, 42.649819697382135 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 9, "house_num": 2, "strt_name": "Jay", "full_add": "2 Jay", "biz": "Birch's Submarine Sandwich Shop", "house_num2": "2", "street": "Jay", "biz_type": "eat", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.757637352463604, 42.649476129768559 ], [ -73.757721482367117, 42.649402516102995 ], [ -73.757735546776871, 42.649391577117626 ], [ -73.757788314262683, 42.649421729966662 ], [ -73.757700385610562, 42.649513322312615 ], [ -73.757637352463604, 42.649476129768559 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 23, "house_num": 147, "strt_name": "Hudson", "full_add": "147 Hudson", "biz": "Brownie's Bicycles & Motorcycles", "house_num2": "147", "street": "Hudson", "biz_type": null, "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.758445126636772, 42.649548835884787 ], [ -73.758530326921701, 42.649473254986859 ], [ -73.7586079308618, 42.649520110195972 ], [ -73.758443846080937, 42.649678725484144 ], [ -73.758370007929557, 42.649634969542575 ], [ -73.758452050319988, 42.649552927152143 ], [ -73.758445126636772, 42.649548835884787 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 23, "house_num": 143, "strt_name": "Hudson", "full_add": "143 Hudson", "biz": "Venice Italian Restaurant", "house_num2": "143", "street": "Hudson", "biz_type": "eat", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.758312692582933, 42.649533568266008 ], [ -73.758423462070041, 42.649408732812276 ], [ -73.758470884815353, 42.649437365413213 ], [ -73.758405911078853, 42.649525663055115 ], [ -73.758391885900338, 42.649517375449626 ], [ -73.758356334197813, 42.649561131391188 ], [ -73.758312692582933, 42.649533568266008 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 23, "house_num": 141, "strt_name": "Hudson", "full_add": "141 Hudson", "biz": "Junie's Restaurant", "house_num2": "141", "street": "Hudson", "biz_type": "eat", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.758231879663597, 42.649501862836722 ], [ -73.758360908128083, 42.649370964394485 ], [ -73.758423462070041, 42.649408732812276 ], [ -73.758312692582933, 42.649533568266008 ], [ -73.7583043740172, 42.649528314435017 ], [ -73.758296169778163, 42.649544722913099 ], [ -73.758231879663597, 42.649501862836722 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 4535, "house_num": 76, "strt_name": "Eagle", "full_add": "76 Eagle", "biz": "Fitzgerald's Grill", "house_num2": "76", "street": "Eagle", "biz_type": "eat", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.757985857282875, 42.649229105057024 ], [ -73.757771181397615, 42.649100973900381 ], [ -73.7578285281527, 42.649044264331465 ], [ -73.758036368875125, 42.649175532156157 ], [ -73.757985857282875, 42.649229105057024 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 4535, "house_num": 74, "strt_name": "Eagle", "full_add": "74 Eagle", "biz": "Troy Hand Laundry", "house_num2": "74", "street": "Eagle", "biz_type": "clean", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.757833843089969, 42.649232917908662 ], [ -73.757716635195209, 42.649154914033872 ], [ -73.757771181397615, 42.649100973900381 ], [ -73.757985857282875, 42.649229105057024 ], [ -73.757946122245642, 42.649271248278325 ], [ -73.75786681460157, 42.649216553351373 ], [ -73.757883223079645, 42.649208349112328 ], [ -73.75786681460157, 42.649197410126938 ], [ -73.757833843089969, 42.649232917908662 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 4535, "house_num": 74, "strt_name": "Eagle", "full_add": "74 Eagle", "biz": "Cindy's Beauty Shop", "house_num2": "74", "street": "Eagle", "biz_type": "hair", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.757833843089969, 42.649232917908662 ], [ -73.757716635195209, 42.649154914033872 ], [ -73.757771181397615, 42.649100973900381 ], [ -73.757985857282875, 42.649229105057024 ], [ -73.757946122245642, 42.649271248278325 ], [ -73.75786681460157, 42.649216553351373 ], [ -73.757883223079645, 42.649208349112328 ], [ -73.75786681460157, 42.649197410126938 ], [ -73.757833843089969, 42.649232917908662 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 4535, "house_num": 72, "strt_name": "Eagle", "full_add": "72 Eagle", "biz": "Mansion Wine & Liquor", "house_num2": "72", "street": "Eagle", "biz_type": "drink", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.757783213405716, 42.649281011322792 ], [ -73.757663387780539, 42.649207569810592 ], [ -73.757716635195209, 42.649154914033872 ], [ -73.757833843089969, 42.649232917908662 ], [ -73.757831262899046, 42.649235696575808 ], [ -73.757869549347916, 42.649260309292934 ], [ -73.757853140869827, 42.649284922010068 ], [ -73.757806650181919, 42.649257574546589 ], [ -73.757783213405716, 42.649281011322792 ] ] ] } },
+{ "type": "Feature", "properties": { "id": 4535, "house_num": 70, "strt_name": "Eagle", "full_add": "70 Eagle", "biz": "Eagle Barbershop", "house_num2": "70", "street": "Eagle", "biz_type": "hair", "notes": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -73.757749162145117, 42.649315062583383 ], [ -73.7576325238837, 42.649238090775242 ], [ -73.757663387780539, 42.649207569810592 ], [ -73.757783213405716, 42.649281011322792 ], [ -73.757749162145117, 42.649315062583383 ] ] ] } }
+]
+}
+
+L.geoJson(biz, {
+    style: function(feature) {
+        switch (feature.properties.biz_type) {
+            case 'drink': return {color: "#ff0000"};
+            case 'eat drink':   return {color: "#0000ff"};
+        }
+    }
+}).addTo(map);
+
+//]]>
+
+</script>
+
+
+
+
+
+</body></html>

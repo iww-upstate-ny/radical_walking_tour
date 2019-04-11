@@ -1,0 +1,379 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "260 Madison",
+        "id": "NA",
+        "house_num.x": "260",
+        "strt_name": "Madison",
+        "res_name": "Blodgett, Lorena ",
+        "house_num.y": "260",
+        "street": "Madison",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7611778242168,42.648530809445]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "36 Jay",
+        "id": "6",
+        "house_num.x": "36",
+        "strt_name": "Jay",
+        "res_name": "Boyle, James ",
+        "house_num.y": "36",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.758942731828,42.6501851989508]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "40 Jay",
+        "id": "6",
+        "house_num.x": "40",
+        "strt_name": "Jay",
+        "res_name": "Bionda, Antoinette ",
+        "house_num.y": "40",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7590717968421,42.6502547534903]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "30 Jay",
+        "id": "9",
+        "house_num.x": "30",
+        "strt_name": "Jay",
+        "res_name": "Pierce, Lillian et al.",
+        "house_num.y": "30-32",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7586057889851,42.6499622134413]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "28 Jay",
+        "id": "9",
+        "house_num.x": "28",
+        "strt_name": "Jay",
+        "res_name": "Nelson, Josephine",
+        "house_num.y": "28",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7585354033489,42.6499290275175]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "32 Jay",
+        "id": "9",
+        "house_num.x": "32",
+        "strt_name": "Jay",
+        "res_name": "Pierce, Lillian et al.",
+        "house_num.y": "30-32",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7586403660317,42.6500233307406]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "26 Jay",
+        "id": "9",
+        "house_num.x": "26",
+        "strt_name": "Jay",
+        "res_name": "Nelson, Josephine",
+        "house_num.y": "26",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.758467830624,42.6498944438166]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "24 Jay",
+        "id": "9",
+        "house_num.x": "24",
+        "strt_name": "Jay",
+        "res_name": "Winne, Blanche ",
+        "house_num.y": "24",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7584050595717,42.6498568100849]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "22 Jay",
+        "id": "9",
+        "house_num.x": "22",
+        "strt_name": "Jay",
+        "res_name": "Cesario, Catherine G",
+        "house_num.y": "22",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7583557347415,42.6498173285758]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "20 Jay",
+        "id": "9",
+        "house_num.x": "20",
+        "strt_name": "Jay",
+        "res_name": "Strong, Ethel ",
+        "house_num.y": "20",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7582877878164,42.6497878624739]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "18 Jay",
+        "id": "9",
+        "house_num.x": "18",
+        "strt_name": "Jay",
+        "res_name": "Skinner, Ada",
+        "house_num.y": "18",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7582344086103,42.6497475357173]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "16 Jay",
+        "id": "9",
+        "house_num.x": "16",
+        "strt_name": "Jay",
+        "res_name": "Skinner, Ada ",
+        "house_num.y": "16",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.758172537381,42.6497116341872]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "14 Jay",
+        "id": "9",
+        "house_num.x": "14",
+        "strt_name": "Jay",
+        "res_name": "Radrizzi, Louis",
+        "house_num.y": "14",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7581092078007,42.6496738718289]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "12 Jay",
+        "id": "9",
+        "house_num.x": "12",
+        "strt_name": "Jay",
+        "res_name": "Pulver, Josephine ",
+        "house_num.y": "12",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7580410095814,42.6496321452161]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "10 Jay",
+        "id": "9",
+        "house_num.x": "10",
+        "strt_name": "Jay",
+        "res_name": "Flynn, Clarence and Mae",
+        "house_num.y": "10",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7579832805462,42.6495878350455]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "8 Jay",
+        "id": "9",
+        "house_num.x": "8",
+        "strt_name": "Jay",
+        "res_name": "Blanchard, Annie ",
+        "house_num.y": "8",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7579041816514,42.6495617447487]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "6 Jay",
+        "id": "9",
+        "house_num.x": "6",
+        "strt_name": "Jay",
+        "res_name": "Redington, Lorraine ",
+        "house_num.y": "4-6",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7578387055853,42.6495222444707]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "4 Jay",
+        "id": "9",
+        "house_num.x": "4",
+        "strt_name": "Jay",
+        "res_name": "Redington, Lorraine ",
+        "house_num.y": "4-6",
+        "street": "Jay",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7577760649767,42.6494866448816]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "135 Hudson",
+        "id": "23",
+        "house_num.x": "135",
+        "strt_name": "Hudson",
+        "res_name": "DeNeef, Mary",
+        "house_num.y": "135",
+        "street": "Hudson",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7581627147643,42.6493280502966]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "139 Hudson",
+        "id": "23",
+        "house_num.x": "139",
+        "strt_name": "Hudson",
+        "res_name": "Strunk, Correll J. ",
+        "house_num.y": "139",
+        "street": "Hudson",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7582900279333,42.6493976084503]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "137 Hudson",
+        "id": "23",
+        "house_num.x": "137",
+        "strt_name": "Hudson",
+        "res_name": "DeMarco, Thomas C.",
+        "house_num.y": "137",
+        "street": "Hudson",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7582302569367,42.6493591427449]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "full_add": "70 Eagle",
+        "id": "4535",
+        "house_num.x": "70",
+        "strt_name": "Eagle",
+        "res_name": "Banola, Margaret W",
+        "house_num.y": "70",
+        "street": "Eagle",
+        "rooming": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.757708101264,42.6492610966872]
+      }
+    }
+  ]
+}
